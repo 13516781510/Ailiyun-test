@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="1">
+    <file>aliyun.svg</file>
+    <file>24gl-exit.svg</file>
+    <file>minimize.svg</file>
+  </qresource>
+</RCC>
