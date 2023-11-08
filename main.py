@@ -1,7 +1,7 @@
 import base64
-import json
 import sys
 import time
+
 import PyQt5
 from PyQt5 import QtCore
 from PyQt5.QtCore import QTimer
@@ -17,6 +17,10 @@ class IOT(QWidget, Ui_IOT):
         super(IOT, self).__init__()
         self.filename = None
         self.pix = QPixmap()
+
+        self.systemtimer = QTimer(self)
+        self.videotimer.timeout.connect(self.updateframe)
+
         self.videotimer = QTimer(self)
         self.videotimer.timeout.connect(self.vedio_operate)
 
@@ -28,10 +32,28 @@ class IOT(QWidget, Ui_IOT):
         self.minimize_button.clicked.connect(self.showMinimized)
         self.connected_button.clicked.connect(self.create_mqtt_pubblisher)
         self.open_video1.clicked.connect(self.onOpenVideoButtonClicked)
+        self.close_video1.clicked.connect(self.closeOpenVideoButtonClicked)
+        self.open_or_close_pipeline.clicked.connect(self.changepipelinestate)
+        self.open_or_close_robot.clicked.connect(self.changerobotstate)
+        self.choose_xipan.clicked.connect(self.endbexipan)
+        self.choose_jiazhua.clicked.connect(self.endbejiazhua)
+
+    def updateframe(self):
+        if "vedio1" in self.publisher.data:
+            pass
+
+    def endbexipan(self):
+        self.state_end_excutive.setText(self._translate("IOT", "目前：吸盘"))
+
+    def endbejiazhua(self):
+        self.state_end_excutive.setText(self._translate("IOT", "目前：夹爪"))
 
     def onOpenVideoButtonClicked(self):
         self.videotimer.start(20)  # 设置计时间隔并启动，间隔20ms
         self.video1.setScaledContents(False)
+
+    def closeOpenVideoButtonClicked(self):
+        self.videotimer.stop()
 
     def vedio_operate(self):
         if "vedio1" in self.publisher.data:
@@ -39,7 +61,7 @@ class IOT(QWidget, Ui_IOT):
             self.pix.loadFromData(img)
             self.video1.setPixmap(self.pix)
             QApplication.processEvents()
-            print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))       # 打印按指定格式排版的时间
+            print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))  # 打印按指定格式排版的时间
         else:
             self.video1.setPixmap(QPixmap("resource/error_no_image.png"))
 
@@ -53,21 +75,7 @@ class IOT(QWidget, Ui_IOT):
         )
         while not self.publisher.connected:
             pass
-        self.state_pipeline1.setText(self._translate("IOT", "生产线1已接入阿里云平台，开始尝试上传数据"))
         i = 0
-        while (i < 1):
-            data = {
-                "params": {
-                    "location": [i, 2, 3],
-                    "collected": 42
-                },
-                "veision": "1.0.0"
-            }
-            self.publisher.Publish(json.dumps(data))
-            i = i + 1
-            time.sleep(1)
-            self.state_pipeline1.setText(self._translate("IOT", f"上传版本{i}"))
-            QApplication.processEvents()
         self.state_pipeline1.setText(self._translate("IOT", "生产线1已成功接入阿里云平台，可选择转至其他页面"))
 
 
@@ -89,6 +97,25 @@ class IOT(QWidget, Ui_IOT):
     def mouseReleaseEvent(self, QMouseEvent):
         self.m_flag = False
         self.setCursor(PyQt5.QtGui.QCursor(PyQt5.QtCore.Qt.ArrowCursor))
+
+    def changerobotstate(self):
+        if (self.open_or_close_robot.text() == "关闭"):
+            self.open_or_close_robot.setText(self._translate("IOT", "开启"))
+            self.state_robot.setText(self._translate("IOT", "已关闭"))
+
+        else:
+            self.open_or_close_robot.setText(self._translate("IOT", "关闭"))
+            self.state_robot.setText(self._translate("IOT", "已开启"))
+
+    def changepipelinestate(self):
+        if (self.open_or_close_pipeline.text() == "关闭"):
+            self.open_or_close_pipeline.setText(self._translate("IOT", "开启"))
+            self.set_pipeline_v.setValue(0.00)
+            self.set_pipeline_v.setDisabled(True)
+
+        else:
+            self.open_or_close_pipeline.setText(self._translate("IOT", "关闭"))
+            self.set_pipeline_v.setEnabled(True)
 
 
 if __name__ == '__main__':

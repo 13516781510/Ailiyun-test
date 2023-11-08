@@ -151,7 +151,7 @@ border-color: #4796f0;
 }</string>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab_7">
       <attribute name="title">
@@ -805,41 +805,44 @@ border:0px solid
          <string>传送带状态：</string>
         </property>
        </widget>
-       <widget class="QDoubleSpinBox" name="doubleSpinBox">
-        <property name="geometry">
-         <rect>
-          <x>140</x>
-          <y>95</y>
-          <width>62</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
+          <widget class="QDoubleSpinBox" name="set_pipeline_v">
+              <property name="geometry">
+                  <rect>
+                      <x>140</x>
+                      <y>95</y>
+                      <width>62</width>
+                      <height>22</height>
+                  </rect>
+              </property>
+              <property name="font">
+                  <font>
           <family>Microsoft YaHei</family>
           <pointsize>9</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">
-border:1px solid
-</string>
-        </property>
-        <property name="singleStep">
-         <double>0.100000000000000</double>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton">
-        <property name="geometry">
-         <rect>
-          <x>230</x>
-          <y>35</y>
-          <width>75</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">
+                  </font>
+              </property>
+              <property name="styleSheet">
+                  <string notr="true">
+                      border:1px solid
+                  </string>
+              </property>
+              <property name="singleStep">
+                  <double>0.100000000000000</double>
+              </property>
+              <property name="stepType">
+                  <enum>QAbstractSpinBox::DefaultStepType</enum>
+              </property>
+          </widget>
+          <widget class="QPushButton" name="open_or_close_robot">
+              <property name="geometry">
+                  <rect>
+                      <x>230</x>
+                      <y>35</y>
+                      <width>75</width>
+                      <height>23</height>
+                  </rect>
+              </property>
+              <property name="styleSheet">
+                  <string notr="true">
 QPushButton{
 background:transparent;
 font: 14pt &quot;微软雅黑&quot;;
@@ -852,20 +855,20 @@ border-radius:5;
 QPushButton::hover{background:rgba(0, 0, 0,170)}</string>
         </property>
         <property name="text">
-         <string>开/关</string>
+            <string>开启</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_17">
-        <property name="geometry">
-         <rect>
-          <x>140</x>
-          <y>20</y>
-          <width>111</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">
+          <widget class="QLabel" name="state_robot">
+              <property name="geometry">
+                  <rect>
+                      <x>140</x>
+                      <y>20</y>
+                      <width>111</width>
+                      <height>51</height>
+                  </rect>
+              </property>
+              <property name="styleSheet">
+                  <string notr="true">
 font: 14pt &quot;微软雅黑&quot;;
 border:0px solid
 </string>
@@ -874,17 +877,17 @@ border:0px solid
          <string>已开启</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_2">
-        <property name="geometry">
-         <rect>
-          <x>230</x>
-          <y>95</y>
-          <width>75</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">
+          <widget class="QPushButton" name="open_or_close_pipeline">
+              <property name="geometry">
+                  <rect>
+                      <x>230</x>
+                      <y>95</y>
+                      <width>75</width>
+                      <height>23</height>
+                  </rect>
+              </property>
+              <property name="styleSheet">
+                  <string notr="true">
 QPushButton{
 background:transparent;
 font: 14pt &quot;微软雅黑&quot;;
@@ -897,7 +900,7 @@ border-radius:5;
 QPushButton::hover{background:rgba(0, 0, 0,170)}</string>
         </property>
         <property name="text">
-         <string>开/关</string>
+            <string>开启</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_14">
@@ -1151,17 +1154,17 @@ border-color: rgb(255, 85, 0);</string>
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QLabel" name="label_29">
-        <property name="geometry">
-         <rect>
-          <x>120</x>
-          <y>50</y>
-          <width>131</width>
-          <height>25</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">
+          <widget class="QLabel" name="state_end_excutive">
+              <property name="geometry">
+                  <rect>
+                      <x>120</x>
+                      <y>50</y>
+                      <width>131</width>
+                      <height>25</height>
+                  </rect>
+              </property>
+              <property name="styleSheet">
+                  <string notr="true">
 font: 14pt &quot;微软雅黑&quot;;
 border:0px solid
 </string>
@@ -1170,17 +1173,17 @@ border:0px solid
          <string>目前：夹爪</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_4">
-        <property name="geometry">
-         <rect>
-          <x>220</x>
-          <y>110</y>
-          <width>75</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">
+          <widget class="QPushButton" name="choose_xipan">
+              <property name="geometry">
+                  <rect>
+                      <x>220</x>
+                      <y>110</y>
+                      <width>75</width>
+                      <height>23</height>
+                  </rect>
+              </property>
+              <property name="styleSheet">
+                  <string notr="true">
 QPushButton{
 background:transparent;
 font: 14pt &quot;微软雅黑&quot;;
@@ -1196,17 +1199,17 @@ QPushButton::hover{background:rgba(0, 0, 0,170)}</string>
          <string>吸盘</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_6">
-        <property name="geometry">
-         <rect>
-          <x>110</x>
-          <y>110</y>
-          <width>75</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">
+          <widget class="QPushButton" name="choose_jiazhua">
+              <property name="geometry">
+                  <rect>
+                      <x>110</x>
+                      <y>110</y>
+                      <width>75</width>
+                      <height>23</height>
+                  </rect>
+              </property>
+              <property name="styleSheet">
+                  <string notr="true">
 QPushButton{
 background:transparent;
 font: 14pt &quot;微软雅黑&quot;;

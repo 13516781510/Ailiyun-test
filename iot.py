@@ -19,115 +19,115 @@ class Ui_IOT(object):
         self.tabWidget_2 = QtWidgets.QTabWidget(IOT)
         self.tabWidget_2.setGeometry(QtCore.QRect(100, 90, 1461, 811))
         self.tabWidget_2.setStyleSheet("QTabWidget::pane{\n"
-"min-width:100px;\n"
-"min-height:25px;\n"
-"border-top: 2px solid;\n"
-"\n"
-"}\n"
-"\n"
-"QTabBar::tab {\n"
-"\n"
-"min-width:100px;\n"
-"\n"
-"min-height:25px;\n"
-"\n"
-"color: gray;\n"
-"\n"
-"font:17px \"Microsoft YaHei\";\n"
-"\n"
-"border: 0px solid;\n"
-"\n"
-"}\n"
-"\n"
-"QTabBar::tab:selected{\n"
-"\n"
-"min-width:100px;\n"
-"\n"
-"min-height:25px;\n"
-"color: rgb(255, 85, 0);\n"
-"\n"
-"font:19px \"Microsoft YaHei\";\n"
-"\n"
-"border: 0px solid;\n"
-"\n"
-"border-bottom: 2px solid;\n"
-"\n"
-"border-color: #4796f0;\n"
-"\n"
-"}\n"
-"QTabBar::tab:hover{\n"
-"\n"
-"min-width:100px;\n"
-"\n"
-"min-height:25px;\n"
-"color: rgb(255, 85, 0);\n"
-"\n"
-"font:18px \"Microsoft YaHei\";\n"
-"\n"
-"border: 0px solid;\n"
-"\n"
-"border-bottom: 2px solid;\n"
-"\n"
-"border-color: #4796f0;\n"
-"\n"
-"}")
+                                       "min-width:100px;\n"
+                                       "min-height:25px;\n"
+                                       "border-top: 2px solid;\n"
+                                       "\n"
+                                       "}\n"
+                                       "\n"
+                                       "QTabBar::tab {\n"
+                                       "\n"
+                                       "min-width:100px;\n"
+                                       "\n"
+                                       "min-height:25px;\n"
+                                       "\n"
+                                       "color: gray;\n"
+                                       "\n"
+                                       "font:17px \"Microsoft YaHei\";\n"
+                                       "\n"
+                                       "border: 0px solid;\n"
+                                       "\n"
+                                       "}\n"
+                                       "\n"
+                                       "QTabBar::tab:selected{\n"
+                                       "\n"
+                                       "min-width:100px;\n"
+                                       "\n"
+                                       "min-height:25px;\n"
+                                       "color: rgb(255, 85, 0);\n"
+                                       "\n"
+                                       "font:19px \"Microsoft YaHei\";\n"
+                                       "\n"
+                                       "border: 0px solid;\n"
+                                       "\n"
+                                       "border-bottom: 2px solid;\n"
+                                       "\n"
+                                       "border-color: #4796f0;\n"
+                                       "\n"
+                                       "}\n"
+                                       "QTabBar::tab:hover{\n"
+                                       "\n"
+                                       "min-width:100px;\n"
+                                       "\n"
+                                       "min-height:25px;\n"
+                                       "color: rgb(255, 85, 0);\n"
+                                       "\n"
+                                       "font:18px \"Microsoft YaHei\";\n"
+                                       "\n"
+                                       "border: 0px solid;\n"
+                                       "\n"
+                                       "border-bottom: 2px solid;\n"
+                                       "\n"
+                                       "border-color: #4796f0;\n"
+                                       "\n"
+                                       "}")
         self.tabWidget_2.setObjectName("tabWidget_2")
         self.tab_4 = QtWidgets.QWidget()
         self.tab_4.setObjectName("tab_4")
         self.tabWidget = QtWidgets.QTabWidget(self.tab_4)
         self.tabWidget.setGeometry(QtCore.QRect(0, 16, 1441, 731))
         self.tabWidget.setStyleSheet("QTabWidget::pane{\n"
-"min-width:150px;\n"
-"min-height:25px;\n"
-"border-top: 2px solid;\n"
-"\n"
-"}\n"
-"\n"
-"QTabBar::tab {\n"
-"\n"
-"min-width:150px;\n"
-"\n"
-"min-height:25px;\n"
-"\n"
-"color: gray;\n"
-"\n"
-"font:16px \"Microsoft YaHei\";\n"
-"\n"
-"border: 0px solid;\n"
-"\n"
-"}\n"
-"\n"
-"QTabBar::tab:selected{\n"
-"\n"
-"min-width:150px;\n"
-"\n"
-"min-height:25px;\n"
-"color: rgb(255, 85, 0);\n"
-"\n"
-"font:18px \"Microsoft YaHei\";\n"
-"\n"
-"border: 0px solid;\n"
-"\n"
-"border-bottom: 2px solid;\n"
-"\n"
-"border-color: #4796f0;\n"
-"\n"
-"}\n"
-"QTabBar::tab:hover{\n"
-"\n"
-"min-width:150px;\n"
-"\n"
-"min-height:25px;\n"
-"color: rgb(255, 85, 0);\n"
-"font:17px \"Microsoft YaHei\";\n"
-"\n"
-"border: 0px solid;\n"
-"\n"
-"border-bottom: 2px solid;\n"
-"\n"
-"border-color: #4796f0;\n"
-"\n"
-"}")
+                                     "min-width:150px;\n"
+                                     "min-height:25px;\n"
+                                     "border-top: 2px solid;\n"
+                                     "\n"
+                                     "}\n"
+                                     "\n"
+                                     "QTabBar::tab {\n"
+                                     "\n"
+                                     "min-width:150px;\n"
+                                     "\n"
+                                     "min-height:25px;\n"
+                                     "\n"
+                                     "color: gray;\n"
+                                     "\n"
+                                     "font:16px \"Microsoft YaHei\";\n"
+                                     "\n"
+                                     "border: 0px solid;\n"
+                                     "\n"
+                                     "}\n"
+                                     "\n"
+                                     "QTabBar::tab:selected{\n"
+                                     "\n"
+                                     "min-width:150px;\n"
+                                     "\n"
+                                     "min-height:25px;\n"
+                                     "color: rgb(255, 85, 0);\n"
+                                     "\n"
+                                     "font:18px \"Microsoft YaHei\";\n"
+                                     "\n"
+                                     "border: 0px solid;\n"
+                                     "\n"
+                                     "border-bottom: 2px solid;\n"
+                                     "\n"
+                                     "border-color: #4796f0;\n"
+                                     "\n"
+                                     "}\n"
+                                     "QTabBar::tab:hover{\n"
+                                     "\n"
+                                     "min-width:150px;\n"
+                                     "\n"
+                                     "min-height:25px;\n"
+                                     "color: rgb(255, 85, 0);\n"
+                                     "font:17px \"Microsoft YaHei\";\n"
+                                     "\n"
+                                     "border: 0px solid;\n"
+                                     "\n"
+                                     "border-bottom: 2px solid;\n"
+                                     "\n"
+                                     "border-color: #4796f0;\n"
+                                     "\n"
+                                     "}")
         self.tabWidget.setObjectName("tabWidget")
         self.tab_7 = QtWidgets.QWidget()
         self.tab_7.setObjectName("tab_7")
@@ -162,44 +162,44 @@ class Ui_IOT(object):
         self.label_6 = QtWidgets.QLabel(self.widget_2)
         self.label_6.setGeometry(QtCore.QRect(0, 300, 104, 25))
         self.label_6.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                   "font: 14pt \"微软雅黑\";\n"
+                                   "")
         self.label_6.setObjectName("label_6")
         self.label_brokerid = QtWidgets.QLabel(self.widget_2)
         self.label_brokerid.setGeometry(QtCore.QRect(0, 0, 104, 25))
         self.label_brokerid.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                          "font: 14pt \"微软雅黑\";\n"
+                                          "")
         self.label_brokerid.setObjectName("label_brokerid")
         self.label_4 = QtWidgets.QLabel(self.widget_2)
         self.label_4.setGeometry(QtCore.QRect(0, 200, 104, 25))
         self.label_4.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                   "font: 14pt \"微软雅黑\";\n"
+                                   "")
         self.label_4.setObjectName("label_4")
         self.label_2 = QtWidgets.QLabel(self.widget_2)
         self.label_2.setGeometry(QtCore.QRect(0, 100, 104, 25))
         self.label_2.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                   "font: 14pt \"微软雅黑\";\n"
+                                   "")
         self.label_2.setObjectName("label_2")
         self.label_5 = QtWidgets.QLabel(self.widget_2)
         self.label_5.setGeometry(QtCore.QRect(0, 250, 104, 25))
         self.label_5.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                   "font: 14pt \"微软雅黑\";\n"
+                                   "")
         self.label_5.setObjectName("label_5")
         self.label = QtWidgets.QLabel(self.widget_2)
         self.label.setGeometry(QtCore.QRect(0, 50, 104, 25))
         self.label.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                 "font: 14pt \"微软雅黑\";\n"
+                                 "")
         self.label.setObjectName("label")
         self.label_3 = QtWidgets.QLabel(self.widget_2)
         self.label_3.setGeometry(QtCore.QRect(0, 150, 104, 25))
         self.label_3.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                   "font: 14pt \"微软雅黑\";\n"
+                                   "")
         self.label_3.setObjectName("label_3")
         self.widget_3 = QtWidgets.QWidget(self.tab_7)
         self.widget_3.setGeometry(QtCore.QRect(540, 140, 841, 331))
@@ -208,60 +208,60 @@ class Ui_IOT(object):
         self.label_7 = QtWidgets.QLabel(self.widget_3)
         self.label_7.setGeometry(QtCore.QRect(0, 300, 771, 25))
         self.label_7.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                   "font: 14pt \"微软雅黑\";\n"
+                                   "")
         self.label_7.setObjectName("label_7")
         self.label_brokerid_2 = QtWidgets.QLabel(self.widget_3)
         self.label_brokerid_2.setGeometry(QtCore.QRect(0, 0, 771, 25))
         self.label_brokerid_2.setStyleSheet("color: rgb(0, 0, 0);\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                            "font: 14pt \"微软雅黑\";\n"
+                                            "")
         self.label_brokerid_2.setObjectName("label_brokerid_2")
         self.label_8 = QtWidgets.QLabel(self.widget_3)
         self.label_8.setGeometry(QtCore.QRect(0, 200, 771, 25))
         self.label_8.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                   "font: 14pt \"微软雅黑\";\n"
+                                   "")
         self.label_8.setObjectName("label_8")
         self.label_9 = QtWidgets.QLabel(self.widget_3)
         self.label_9.setGeometry(QtCore.QRect(0, 100, 771, 25))
         self.label_9.setStyleSheet("color: rgb(0, 0, 0);\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                   "font: 14pt \"微软雅黑\";\n"
+                                   "")
         self.label_9.setObjectName("label_9")
         self.label_10 = QtWidgets.QLabel(self.widget_3)
         self.label_10.setGeometry(QtCore.QRect(0, 250, 771, 25))
         self.label_10.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "")
         self.label_10.setObjectName("label_10")
         self.label_11 = QtWidgets.QLabel(self.widget_3)
         self.label_11.setGeometry(QtCore.QRect(0, 50, 851, 21))
         self.label_11.setStyleSheet("color: rgb(0, 0, 0);\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "")
         self.label_11.setObjectName("label_11")
         self.label_12 = QtWidgets.QLabel(self.widget_3)
         self.label_12.setGeometry(QtCore.QRect(0, 150, 771, 25))
         self.label_12.setStyleSheet("color: rgb(0, 0, 0);\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "")
         self.label_12.setObjectName("label_12")
         self.connected_button = QtWidgets.QPushButton(self.tab_7)
         self.connected_button.setGeometry(QtCore.QRect(640, 520, 181, 61))
         self.connected_button.setStyleSheet("\n"
-"QPushButton{\n"
-"background:transparent;\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:1px solid;\n"
-"border-color: rgb(255, 85, 0);\n"
-"border-radius:15;\n"
-"}\n"
-"\n"
-"\n"
-"QPushButton::hover{background:rgba(0, 0, 0,170)}\n"
-"\n"
-"")
+                                            "QPushButton{\n"
+                                            "background:transparent;\n"
+                                            "font: 14pt \"微软雅黑\";\n"
+                                            "border:1px solid;\n"
+                                            "border-color: rgb(255, 85, 0);\n"
+                                            "border-radius:15;\n"
+                                            "}\n"
+                                            "\n"
+                                            "\n"
+                                            "QPushButton::hover{background:rgba(0, 0, 0,170)}\n"
+                                            "\n"
+                                            "")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("resource/aliyun.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.connected_button.setIcon(icon)
@@ -291,8 +291,8 @@ class Ui_IOT(object):
         self.label_16 = QtWidgets.QLabel(self.tab)
         self.label_16.setGeometry(QtCore.QRect(910, 40, 191, 51))
         self.label_16.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "")
         self.label_16.setObjectName("label_16")
         self.tableWidget = QtWidgets.QTableWidget(self.tab)
         self.tableWidget.setGeometry(QtCore.QRect(730, 470, 511, 211))
@@ -323,130 +323,131 @@ class Ui_IOT(object):
         self.widget_4 = QtWidgets.QWidget(self.tab)
         self.widget_4.setGeometry(QtCore.QRect(20, 100, 341, 161))
         self.widget_4.setStyleSheet("QWidget{\n"
-"border:2px solid\n"
-"}\n"
-"border-color: rgb(207, 207, 207);\n"
-"color: rgb(0, 0, 0);")
+                                    "border:2px solid\n"
+                                    "}\n"
+                                    "border-color: rgb(207, 207, 207);\n"
+                                    "color: rgb(0, 0, 0);")
         self.widget_4.setObjectName("widget_4")
         self.label_15 = QtWidgets.QLabel(self.widget_4)
         self.label_15.setGeometry(QtCore.QRect(20, 80, 111, 51))
         self.label_15.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:0px solid\n"
-"")
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "border:0px solid\n"
+                                    "")
         self.label_15.setObjectName("label_15")
-        self.doubleSpinBox = QtWidgets.QDoubleSpinBox(self.widget_4)
-        self.doubleSpinBox.setGeometry(QtCore.QRect(140, 95, 62, 22))
+        self.set_pipeline_v = QtWidgets.QDoubleSpinBox(self.widget_4)
+        self.set_pipeline_v.setGeometry(QtCore.QRect(140, 95, 62, 22))
         font = QtGui.QFont()
         font.setFamily("Microsoft YaHei")
         font.setPointSize(9)
-        self.doubleSpinBox.setFont(font)
-        self.doubleSpinBox.setStyleSheet("\n"
-"border:1px solid\n"
-"")
-        self.doubleSpinBox.setSingleStep(0.1)
-        self.doubleSpinBox.setObjectName("doubleSpinBox")
-        self.pushButton = QtWidgets.QPushButton(self.widget_4)
-        self.pushButton.setGeometry(QtCore.QRect(230, 35, 75, 23))
-        self.pushButton.setStyleSheet("\n"
-"QPushButton{\n"
-"background:transparent;\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:1px solid;\n"
-"border-color: rgb(255, 85, 0);\n"
-"border-radius:5;\n"
-"}\n"
-"\n"
-"\n"
-"QPushButton::hover{background:rgba(0, 0, 0,170)}")
-        self.pushButton.setObjectName("pushButton")
-        self.label_17 = QtWidgets.QLabel(self.widget_4)
-        self.label_17.setGeometry(QtCore.QRect(140, 20, 111, 51))
-        self.label_17.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:0px solid\n"
-"")
-        self.label_17.setObjectName("label_17")
-        self.pushButton_2 = QtWidgets.QPushButton(self.widget_4)
-        self.pushButton_2.setGeometry(QtCore.QRect(230, 95, 75, 23))
-        self.pushButton_2.setStyleSheet("\n"
-"QPushButton{\n"
-"background:transparent;\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:1px solid;\n"
-"border-color: rgb(255, 85, 0);\n"
-"border-radius:5;\n"
-"}\n"
-"\n"
-"\n"
-"QPushButton::hover{background:rgba(0, 0, 0,170)}")
-        self.pushButton_2.setObjectName("pushButton_2")
+        self.set_pipeline_v.setFont(font)
+        self.set_pipeline_v.setStyleSheet("\n"
+                                          "border:1px solid\n"
+                                          "")
+        self.set_pipeline_v.setSingleStep(0.1)
+        self.set_pipeline_v.setStepType(QtWidgets.QAbstractSpinBox.DefaultStepType)
+        self.set_pipeline_v.setObjectName("set_pipeline_v")
+        self.open_or_close_robot = QtWidgets.QPushButton(self.widget_4)
+        self.open_or_close_robot.setGeometry(QtCore.QRect(230, 35, 75, 23))
+        self.open_or_close_robot.setStyleSheet("\n"
+                                               "QPushButton{\n"
+                                               "background:transparent;\n"
+                                               "font: 14pt \"微软雅黑\";\n"
+                                               "border:1px solid;\n"
+                                               "border-color: rgb(255, 85, 0);\n"
+                                               "border-radius:5;\n"
+                                               "}\n"
+                                               "\n"
+                                               "\n"
+                                               "QPushButton::hover{background:rgba(0, 0, 0,170)}")
+        self.open_or_close_robot.setObjectName("open_or_close_robot")
+        self.state_robot = QtWidgets.QLabel(self.widget_4)
+        self.state_robot.setGeometry(QtCore.QRect(140, 20, 111, 51))
+        self.state_robot.setStyleSheet("\n"
+                                       "font: 14pt \"微软雅黑\";\n"
+                                       "border:0px solid\n"
+                                       "")
+        self.state_robot.setObjectName("state_robot")
+        self.open_or_close_pipeline = QtWidgets.QPushButton(self.widget_4)
+        self.open_or_close_pipeline.setGeometry(QtCore.QRect(230, 95, 75, 23))
+        self.open_or_close_pipeline.setStyleSheet("\n"
+                                                  "QPushButton{\n"
+                                                  "background:transparent;\n"
+                                                  "font: 14pt \"微软雅黑\";\n"
+                                                  "border:1px solid;\n"
+                                                  "border-color: rgb(255, 85, 0);\n"
+                                                  "border-radius:5;\n"
+                                                  "}\n"
+                                                  "\n"
+                                                  "\n"
+                                                  "QPushButton::hover{background:rgba(0, 0, 0,170)}")
+        self.open_or_close_pipeline.setObjectName("open_or_close_pipeline")
         self.label_14 = QtWidgets.QLabel(self.widget_4)
         self.label_14.setGeometry(QtCore.QRect(20, 20, 111, 51))
         self.label_14.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:0px solid\n"
-"")
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "border:0px solid\n"
+                                    "")
         self.label_14.setObjectName("label_14")
         self.widget_5 = QtWidgets.QWidget(self.tab)
         self.widget_5.setGeometry(QtCore.QRect(20, 290, 341, 161))
         self.widget_5.setStyleSheet("QWidget{\n"
-"border:2px solid\n"
-"}\n"
-"border-color: rgb(207, 207, 207);")
+                                    "border:2px solid\n"
+                                    "}\n"
+                                    "border-color: rgb(207, 207, 207);")
         self.widget_5.setObjectName("widget_5")
         self.label_18 = QtWidgets.QLabel(self.widget_5)
         self.label_18.setGeometry(QtCore.QRect(150, 105, 16, 25))
         self.label_18.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:0px solid\n"
-"")
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "border:0px solid\n"
+                                    "")
         self.label_18.setObjectName("label_18")
         self.pushButton_3 = QtWidgets.QPushButton(self.widget_5)
         self.pushButton_3.setGeometry(QtCore.QRect(300, 60, 16, 25))
         self.pushButton_3.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:0px solid\n"
-"")
+                                        "font: 14pt \"微软雅黑\";\n"
+                                        "border:0px solid\n"
+                                        "")
         self.pushButton_3.setObjectName("pushButton_3")
         self.label_19 = QtWidgets.QLabel(self.widget_5)
         self.label_19.setGeometry(QtCore.QRect(225, 60, 16, 25))
         self.label_19.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:0px solid\n"
-"")
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "border:0px solid\n"
+                                    "")
         self.label_19.setObjectName("label_19")
         self.label_20 = QtWidgets.QLabel(self.widget_5)
         self.label_20.setGeometry(QtCore.QRect(150, 60, 16, 25))
         self.label_20.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:0px solid\n"
-"")
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "border:0px solid\n"
+                                    "")
         self.label_20.setObjectName("label_20")
         self.label_21 = QtWidgets.QLabel(self.widget_5)
         self.label_21.setGeometry(QtCore.QRect(225, 105, 16, 25))
         self.label_21.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:0px solid\n"
-"")
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "border:0px solid\n"
+                                    "")
         self.label_21.setObjectName("label_21")
         self.pushButton_5 = QtWidgets.QPushButton(self.widget_5)
         self.pushButton_5.setGeometry(QtCore.QRect(300, 105, 16, 25))
         self.pushButton_5.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:0px solid\n"
-"")
+                                        "font: 14pt \"微软雅黑\";\n"
+                                        "border:0px solid\n"
+                                        "")
         self.pushButton_5.setObjectName("pushButton_5")
         self.label_24 = QtWidgets.QLabel(self.widget_5)
         self.label_24.setGeometry(QtCore.QRect(150, 10, 161, 41))
         self.label_24.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "")
         self.label_24.setObjectName("label_24")
         self.label_30 = QtWidgets.QLabel(self.widget_5)
         self.label_30.setGeometry(QtCore.QRect(10, 10, 80, 80))
         self.label_30.setStyleSheet("border:0px solid;\n"
-"border-color: rgb(255, 85, 0);")
+                                    "border-color: rgb(255, 85, 0);")
         self.label_30.setText("")
         self.label_30.setPixmap(QtGui.QPixmap("resource/三维坐标.svg"))
         self.label_30.setScaledContents(True)
@@ -454,62 +455,62 @@ class Ui_IOT(object):
         self.widget_7 = QtWidgets.QWidget(self.tab)
         self.widget_7.setGeometry(QtCore.QRect(20, 530, 341, 161))
         self.widget_7.setStyleSheet("QWidget{\n"
-"border:2px solid\n"
-"}\n"
-"border-color: rgb(207, 207, 207);")
+                                    "border:2px solid\n"
+                                    "}\n"
+                                    "border-color: rgb(207, 207, 207);")
         self.widget_7.setObjectName("widget_7")
         self.label_27 = QtWidgets.QLabel(self.widget_7)
         self.label_27.setGeometry(QtCore.QRect(120, 14, 131, 31))
         self.label_27.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:0px solid\n"
-"")
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "border:0px solid\n"
+                                    "")
         self.label_27.setObjectName("label_27")
         self.label_28 = QtWidgets.QLabel(self.widget_7)
         self.label_28.setGeometry(QtCore.QRect(10, 10, 80, 80))
         self.label_28.setStyleSheet("border:0px solid;\n"
-"border-color: rgb(255, 85, 0);")
+                                    "border-color: rgb(255, 85, 0);")
         self.label_28.setLineWidth(0)
         self.label_28.setText("")
         self.label_28.setPixmap(QtGui.QPixmap("resource/Robotic Arm.svg"))
         self.label_28.setScaledContents(True)
         self.label_28.setObjectName("label_28")
-        self.label_29 = QtWidgets.QLabel(self.widget_7)
-        self.label_29.setGeometry(QtCore.QRect(120, 50, 131, 25))
-        self.label_29.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:0px solid\n"
-"")
-        self.label_29.setObjectName("label_29")
-        self.pushButton_4 = QtWidgets.QPushButton(self.widget_7)
-        self.pushButton_4.setGeometry(QtCore.QRect(220, 110, 75, 23))
-        self.pushButton_4.setStyleSheet("\n"
-"QPushButton{\n"
-"background:transparent;\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:1px solid;\n"
-"border-color: rgb(255, 85, 0);\n"
-"border-radius:5;\n"
-"}\n"
-"\n"
-"\n"
-"QPushButton::hover{background:rgba(0, 0, 0,170)}")
-        self.pushButton_4.setObjectName("pushButton_4")
-        self.pushButton_6 = QtWidgets.QPushButton(self.widget_7)
-        self.pushButton_6.setGeometry(QtCore.QRect(110, 110, 75, 23))
-        self.pushButton_6.setStyleSheet("\n"
-"QPushButton{\n"
-"background:transparent;\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:1px solid;\n"
-"border-color: rgb(255, 85, 0);\n"
-"border-radius:5;\n"
-"}\n"
-"\n"
-"\n"
-"QPushButton::hover{background:rgba(0, 0, 0,170)}\n"
-"")
-        self.pushButton_6.setObjectName("pushButton_6")
+        self.state_end_excutive = QtWidgets.QLabel(self.widget_7)
+        self.state_end_excutive.setGeometry(QtCore.QRect(120, 50, 131, 25))
+        self.state_end_excutive.setStyleSheet("\n"
+                                              "font: 14pt \"微软雅黑\";\n"
+                                              "border:0px solid\n"
+                                              "")
+        self.state_end_excutive.setObjectName("state_end_excutive")
+        self.choose_xipan = QtWidgets.QPushButton(self.widget_7)
+        self.choose_xipan.setGeometry(QtCore.QRect(220, 110, 75, 23))
+        self.choose_xipan.setStyleSheet("\n"
+                                        "QPushButton{\n"
+                                        "background:transparent;\n"
+                                        "font: 14pt \"微软雅黑\";\n"
+                                        "border:1px solid;\n"
+                                        "border-color: rgb(255, 85, 0);\n"
+                                        "border-radius:5;\n"
+                                        "}\n"
+                                        "\n"
+                                        "\n"
+                                        "QPushButton::hover{background:rgba(0, 0, 0,170)}")
+        self.choose_xipan.setObjectName("choose_xipan")
+        self.choose_jiazhua = QtWidgets.QPushButton(self.widget_7)
+        self.choose_jiazhua.setGeometry(QtCore.QRect(110, 110, 75, 23))
+        self.choose_jiazhua.setStyleSheet("\n"
+                                          "QPushButton{\n"
+                                          "background:transparent;\n"
+                                          "font: 14pt \"微软雅黑\";\n"
+                                          "border:1px solid;\n"
+                                          "border-color: rgb(255, 85, 0);\n"
+                                          "border-radius:5;\n"
+                                          "}\n"
+                                          "\n"
+                                          "\n"
+                                          "QPushButton::hover{background:rgba(0, 0, 0,170)}\n"
+                                          "")
+        self.choose_jiazhua.setObjectName("choose_jiazhua")
         self.label_31 = QtWidgets.QLabel(self.tab)
         self.label_31.setGeometry(QtCore.QRect(770, 20, 80, 80))
         self.label_31.setText("")
@@ -519,8 +520,8 @@ class Ui_IOT(object):
         self.open_video1 = QtWidgets.QPushButton(self.tab)
         self.open_video1.setGeometry(QtCore.QRect(1080, 40, 50, 50))
         self.open_video1.setStyleSheet("QPushButton{background:transparent}\n"
-"\n"
-"QPushButton::hover{background:rgba(0, 0, 0,170)}")
+                                       "\n"
+                                       "QPushButton::hover{background:rgba(0, 0, 0,170)}")
         self.open_video1.setText("")
         icon1 = QtGui.QIcon()
         icon1.addPixmap(QtGui.QPixmap("resource/摄像头.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -531,8 +532,8 @@ class Ui_IOT(object):
         self.close_video1 = QtWidgets.QPushButton(self.tab)
         self.close_video1.setGeometry(QtCore.QRect(1170, 40, 50, 50))
         self.close_video1.setStyleSheet("QPushButton{background:transparent}\n"
-"\n"
-"QPushButton::hover{background:rgba(0, 0, 0,170)}")
+                                        "\n"
+                                        "QPushButton::hover{background:rgba(0, 0, 0,170)}")
         self.close_video1.setText("")
         icon2 = QtGui.QIcon()
         icon2.addPixmap(QtGui.QPixmap("resource/摄像头_关闭.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -559,9 +560,9 @@ class Ui_IOT(object):
         self.label_23 = QtWidgets.QLabel(self.widget_6)
         self.label_23.setGeometry(QtCore.QRect(10, 20, 271, 61))
         self.label_23.setStyleSheet("color: rgb(255, 255, 255);\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:0px solid\n"
-"")
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "border:0px solid\n"
+                                    "")
         self.label_23.setObjectName("label_23")
         self.tableWidget_2 = QtWidgets.QTableWidget(self.widget_6)
         self.tableWidget_2.setGeometry(QtCore.QRect(20, 80, 461, 241))
@@ -589,9 +590,9 @@ class Ui_IOT(object):
         self.label_25 = QtWidgets.QLabel(self.widget_6)
         self.label_25.setGeometry(QtCore.QRect(10, 350, 271, 61))
         self.label_25.setStyleSheet("color: rgb(255, 255, 255);\n"
-"font: 14pt \"微软雅黑\";\n"
-"border:0px solid\n"
-"")
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "border:0px solid\n"
+                                    "")
         self.label_25.setObjectName("label_25")
         self.tabWidget.addTab(self.tab_2, "")
         self.tab_3 = QtWidgets.QWidget()
@@ -603,8 +604,8 @@ class Ui_IOT(object):
         self.state_pipeline1 = QtWidgets.QLabel(self.tab_4)
         self.state_pipeline1.setGeometry(QtCore.QRect(20, 740, 1431, 31))
         self.state_pipeline1.setStyleSheet("\n"
-"font: 14pt \"微软雅黑\";\n"
-"")
+                                           "font: 14pt \"微软雅黑\";\n"
+                                           "")
         self.state_pipeline1.setAlignment(QtCore.Qt.AlignCenter)
         self.state_pipeline1.setObjectName("state_pipeline1")
         self.tabWidget_2.addTab(self.tab_4, "")
@@ -630,8 +631,8 @@ class Ui_IOT(object):
         self.minimize_button = QtWidgets.QPushButton(IOT)
         self.minimize_button.setGeometry(QtCore.QRect(1450, 50, 50, 50))
         self.minimize_button.setStyleSheet("QPushButton{background:transparent}\n"
-"\n"
-"QPushButton::hover{background:rgba(0, 0, 0,170)}")
+                                           "\n"
+                                           "QPushButton::hover{background:rgba(0, 0, 0,170)}")
         self.minimize_button.setText("")
         icon3 = QtGui.QIcon()
         icon3.addPixmap(QtGui.QPixmap("resource/minimize.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -644,8 +645,8 @@ class Ui_IOT(object):
         self.close_button.setMouseTracking(False)
         self.close_button.setAutoFillBackground(False)
         self.close_button.setStyleSheet("QPushButton{background:transparent}\n"
-"\n"
-"QPushButton::hover{background:rgba(0, 0, 0,170)}")
+                                        "\n"
+                                        "QPushButton::hover{background:rgba(0, 0, 0,170)}")
         self.close_button.setText("")
         icon4 = QtGui.QIcon()
         icon4.addPixmap(QtGui.QPixmap("resource/24gl-exit.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -663,58 +664,63 @@ class Ui_IOT(object):
 
         self.retranslateUi(IOT)
         self.tabWidget_2.setCurrentIndex(0)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(IOT)
 
     def retranslateUi(self, IOT):
         _translate = QtCore.QCoreApplication.translate
         IOT.setWindowTitle(_translate("IOT", "Form"))
         self.broker.setMarkdown(_translate("IOT", "根据物联网平台选择\n"
-"\n"
-""))
+                                                  "\n"
+                                                  ""))
         self.port.setMarkdown(_translate("IOT", "端口\n"
-"\n"
-""))
-        self.port.setHtml(_translate("IOT", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">端口</p></body></html>"))
+                                                "\n"
+                                                ""))
+        self.port.setHtml(_translate("IOT",
+                                     "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                     "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                     "p, li { white-space: pre-wrap; }\n"
+                                     "</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+                                     "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">端口</p></body></html>"))
         self.client.setMarkdown(_translate("IOT", "Client_ID\n"
-"\n"
-""))
+                                                  "\n"
+                                                  ""))
         self.password.setMarkdown(_translate("IOT", "密码\n"
-"\n"
-""))
-        self.password.setHtml(_translate("IOT", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">密码</p></body></html>"))
+                                                    "\n"
+                                                    ""))
+        self.password.setHtml(_translate("IOT",
+                                         "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                         "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                         "p, li { white-space: pre-wrap; }\n"
+                                         "</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+                                         "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">密码</p></body></html>"))
         self.outtopic.setMarkdown(_translate("IOT", "发布主题\n"
-"\n"
-""))
-        self.outtopic.setHtml(_translate("IOT", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">发布主题</p></body></html>"))
+                                                    "\n"
+                                                    ""))
+        self.outtopic.setHtml(_translate("IOT",
+                                         "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                         "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                         "p, li { white-space: pre-wrap; }\n"
+                                         "</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+                                         "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">发布主题</p></body></html>"))
         self.username.setMarkdown(_translate("IOT", "用户名\n"
-"\n"
-""))
-        self.username.setHtml(_translate("IOT", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">用户名</p></body></html>"))
+                                                    "\n"
+                                                    ""))
+        self.username.setHtml(_translate("IOT",
+                                         "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                         "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                         "p, li { white-space: pre-wrap; }\n"
+                                         "</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+                                         "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">用户名</p></body></html>"))
         self.intopic.setMarkdown(_translate("IOT", "订阅主题\n"
-"\n"
-""))
-        self.intopic.setHtml(_translate("IOT", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">订阅主题</p></body></html>"))
+                                                   "\n"
+                                                   ""))
+        self.intopic.setHtml(_translate("IOT",
+                                        "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                        "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                        "p, li { white-space: pre-wrap; }\n"
+                                        "</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+                                        "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">订阅主题</p></body></html>"))
         self.label_6.setText(_translate("IOT", "Outtopic:"))
         self.label_brokerid.setText(_translate("IOT", "Broker ID："))
         self.label_4.setText(_translate("IOT", "Port："))
@@ -727,7 +733,8 @@ class Ui_IOT(object):
         self.label_8.setText(_translate("IOT", "1883"))
         self.label_9.setText(_translate("IOT", "\"app1&k0eudLzkYR8\""))
         self.label_10.setText(_translate("IOT", "\"/sys/k0eudLzkYR8/app1/thing/service/property/set\""))
-        self.label_11.setText(_translate("IOT", "\"k0eudLzkYR8.app1|securemode=2,signmethod=hmacsha256,timestamp=1699097397678|\""))
+        self.label_11.setText(
+            _translate("IOT", "\"k0eudLzkYR8.app1|securemode=2,signmethod=hmacsha256,timestamp=1699097397678|\""))
         self.label_12.setText(_translate("IOT", "\"0ea5530e7102db70088e68774060f592de3083b9e242d2de6d596840a77d6528\""))
         self.connected_button.setText(_translate("IOT", "连接阿里云平台"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), _translate("IOT", "Aliyun接入"))
@@ -752,9 +759,9 @@ class Ui_IOT(object):
         item = self.tableWidget.horizontalHeaderItem(2)
         item.setText(_translate("IOT", "对象3"))
         self.label_15.setText(_translate("IOT", "传送带状态："))
-        self.pushButton.setText(_translate("IOT", "开/关"))
-        self.label_17.setText(_translate("IOT", "已开启"))
-        self.pushButton_2.setText(_translate("IOT", "开/关"))
+        self.open_or_close_robot.setText(_translate("IOT", "开启"))
+        self.state_robot.setText(_translate("IOT", "已开启"))
+        self.open_or_close_pipeline.setText(_translate("IOT", "开启"))
         self.label_14.setText(_translate("IOT", "机械臂状态："))
         self.label_18.setText(_translate("IOT", "0"))
         self.pushButton_3.setText(_translate("IOT", "Z"))
@@ -764,9 +771,9 @@ class Ui_IOT(object):
         self.pushButton_5.setText(_translate("IOT", "0"))
         self.label_24.setText(_translate("IOT", "末端坐标"))
         self.label_27.setText(_translate("IOT", "末端执行器"))
-        self.label_29.setText(_translate("IOT", "目前：夹爪"))
-        self.pushButton_4.setText(_translate("IOT", "吸盘"))
-        self.pushButton_6.setText(_translate("IOT", "夹爪"))
+        self.state_end_excutive.setText(_translate("IOT", "目前：夹爪"))
+        self.choose_xipan.setText(_translate("IOT", "吸盘"))
+        self.choose_jiazhua.setText(_translate("IOT", "夹爪"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("IOT", "工作台现状"))
         self.label_23.setText(_translate("IOT", "改进DH参数"))
         item = self.tableWidget_2.verticalHeaderItem(0)
