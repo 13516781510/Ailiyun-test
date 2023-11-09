@@ -1,4 +1,5 @@
 import base64
+import json
 import sys
 import time
 
@@ -19,7 +20,7 @@ class IOT(QWidget, Ui_IOT):
         self.pix = QPixmap()
 
         self.systemtimer = QTimer(self)
-        self.videotimer.timeout.connect(self.updateframe)
+        self.systemtimer.timeout.connect(self.updateframe)
 
         self.videotimer = QTimer(self)
         self.videotimer.timeout.connect(self.vedio_operate)
@@ -37,16 +38,52 @@ class IOT(QWidget, Ui_IOT):
         self.open_or_close_robot.clicked.connect(self.changerobotstate)
         self.choose_xipan.clicked.connect(self.endbexipan)
         self.choose_jiazhua.clicked.connect(self.endbejiazhua)
+        self.set_pipeline_v.valueChanged.connect(self.set_V)
+
+    def set_V(self):
+        data = {
+            "params": {
+                "V_pipeline": self.set_pipeline_v.value()
+            },
+            "veision": "1.0.0"
+        }
+        self.publisher.Publish(json.dumps(data))
 
     def updateframe(self):
+        if "end_location" in self.publisher.data:
+            self.end_x.setText(self._translate("IOT", str(self.publisher.data["end_location"]["value"])))
+        if "collected" in self.publisher.data:
+            pass
+        if "vedio1" in self.publisher.data:
+            pass
+        if "vedio1" in self.publisher.data:
+            pass
+        if "vedio1" in self.publisher.data:
+            pass
+        if "vedio1" in self.publisher.data:
+            pass
         if "vedio1" in self.publisher.data:
             pass
 
     def endbexipan(self):
         self.state_end_excutive.setText(self._translate("IOT", "目前：吸盘"))
+        data = {
+            "params": {
+                "end_excutor": 0
+            },
+            "veision": "1.0.0"
+        }
+        self.publisher.Publish(json.dumps(data))
 
     def endbejiazhua(self):
         self.state_end_excutive.setText(self._translate("IOT", "目前：夹爪"))
+        data = {
+            "params": {
+                "end_excutor": 1
+            },
+            "veision": "1.0.0"
+        }
+        self.publisher.Publish(json.dumps(data))
 
     def onOpenVideoButtonClicked(self):
         self.videotimer.start(20)  # 设置计时间隔并启动，间隔20ms
@@ -61,7 +98,7 @@ class IOT(QWidget, Ui_IOT):
             self.pix.loadFromData(img)
             self.video1.setPixmap(self.pix)
             QApplication.processEvents()
-            print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))  # 打印按指定格式排版的时间
+
         else:
             self.video1.setPixmap(QPixmap("resource/error_no_image.png"))
 
@@ -77,6 +114,7 @@ class IOT(QWidget, Ui_IOT):
             pass
         i = 0
         self.state_pipeline1.setText(self._translate("IOT", "生产线1已成功接入阿里云平台，可选择转至其他页面"))
+        self.systemtimer.start(20)
 
 
     def closeEvent(self):
@@ -102,20 +140,49 @@ class IOT(QWidget, Ui_IOT):
         if (self.open_or_close_robot.text() == "关闭"):
             self.open_or_close_robot.setText(self._translate("IOT", "开启"))
             self.state_robot.setText(self._translate("IOT", "已关闭"))
+            data = {
+                "params": {
+                    "ctrl_robotic": 0
+                },
+                "veision": "1.0.0"
+            }
+            self.publisher.Publish(json.dumps(data))
 
         else:
             self.open_or_close_robot.setText(self._translate("IOT", "关闭"))
             self.state_robot.setText(self._translate("IOT", "已开启"))
-
+            data = {
+                "params": {
+                    "ctrl_robotic": 1
+                },
+                "veision": "1.0.0"
+            }
+            self.publisher.Publish(json.dumps(data))
+        print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))  # 打印按指定格式排版的时间
     def changepipelinestate(self):
         if (self.open_or_close_pipeline.text() == "关闭"):
             self.open_or_close_pipeline.setText(self._translate("IOT", "开启"))
             self.set_pipeline_v.setValue(0.00)
             self.set_pipeline_v.setDisabled(True)
+            data = {
+                "params": {
+                    "control_pipiline": 0
+                },
+                "veision": "1.0.0"
+            }
+            self.publisher.Publish(json.dumps(data))
+            print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))  # 打印按指定格式排版的时间
 
         else:
             self.open_or_close_pipeline.setText(self._translate("IOT", "关闭"))
             self.set_pipeline_v.setEnabled(True)
+            data = {
+                "params": {
+                    "control_pipiline": 1
+                },
+                "veision": "1.0.0"
+            }
+            self.publisher.Publish(json.dumps(data))
 
 
 if __name__ == '__main__':

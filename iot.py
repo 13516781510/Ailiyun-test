@@ -268,7 +268,7 @@ class Ui_IOT(object):
         self.connected_button.setIconSize(QtCore.QSize(30, 30))
         self.connected_button.setObjectName("connected_button")
         self.label_13 = QtWidgets.QLabel(self.tab_7)
-        self.label_13.setGeometry(QtCore.QRect(0, 10, 71, 71))
+        self.label_13.setGeometry(QtCore.QRect(0, 10, 91, 91))
         self.label_13.setText("")
         self.label_13.setPixmap(QtGui.QPixmap("resource/智能机械臂.png"))
         self.label_13.setScaledContents(True)
@@ -289,7 +289,7 @@ class Ui_IOT(object):
         self.tab = QtWidgets.QWidget()
         self.tab.setObjectName("tab")
         self.label_16 = QtWidgets.QLabel(self.tab)
-        self.label_16.setGeometry(QtCore.QRect(910, 40, 191, 51))
+        self.label_16.setGeometry(QtCore.QRect(860, 40, 191, 51))
         self.label_16.setStyleSheet("\n"
                                     "font: 14pt \"微软雅黑\";\n"
                                     "")
@@ -342,8 +342,8 @@ class Ui_IOT(object):
         font.setPointSize(9)
         self.set_pipeline_v.setFont(font)
         self.set_pipeline_v.setStyleSheet("\n"
-                                          "border:1px solid\n"
-                                          "")
+                                          "                      border:1px solid\n"
+                                          "                  ")
         self.set_pipeline_v.setSingleStep(0.1)
         self.set_pipeline_v.setStepType(QtWidgets.QAbstractSpinBox.DefaultStepType)
         self.set_pipeline_v.setObjectName("set_pipeline_v")
@@ -390,21 +390,32 @@ class Ui_IOT(object):
                                     "")
         self.label_14.setObjectName("label_14")
         self.widget_5 = QtWidgets.QWidget(self.tab)
-        self.widget_5.setGeometry(QtCore.QRect(20, 290, 341, 161))
+        self.widget_5.setGeometry(QtCore.QRect(20, 310, 341, 161))
         self.widget_5.setStyleSheet("QWidget{\n"
                                     "border:2px solid\n"
                                     "}\n"
                                     "border-color: rgb(207, 207, 207);")
         self.widget_5.setObjectName("widget_5")
-        self.label_18 = QtWidgets.QLabel(self.widget_5)
-        self.label_18.setGeometry(QtCore.QRect(150, 105, 16, 25))
-        self.label_18.setStyleSheet("\n"
-                                    "font: 14pt \"微软雅黑\";\n"
-                                    "border:0px solid\n"
-                                    "")
-        self.label_18.setObjectName("label_18")
+        self.end_x = QtWidgets.QLabel(self.widget_5)
+        self.end_x.setGeometry(QtCore.QRect(150, 100, 161, 41))
+        font = QtGui.QFont()
+        font.setFamily("微软雅黑")
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.end_x.setFont(font)
+        self.end_x.setStyleSheet("\n"
+                                 "font: 18pt \"微软雅黑\";\n"
+                                 "border:0px solid\n"
+                                 "")
+        self.end_x.setAlignment(QtCore.Qt.AlignCenter)
+        self.end_x.setWordWrap(False)
+        self.end_x.setIndent(0)
+        self.end_x.setOpenExternalLinks(False)
+        self.end_x.setObjectName("end_x")
         self.pushButton_3 = QtWidgets.QPushButton(self.widget_5)
-        self.pushButton_3.setGeometry(QtCore.QRect(300, 60, 16, 25))
+        self.pushButton_3.setGeometry(QtCore.QRect(298, 60, 16, 25))
         self.pushButton_3.setStyleSheet("\n"
                                         "font: 14pt \"微软雅黑\";\n"
                                         "border:0px solid\n"
@@ -424,20 +435,6 @@ class Ui_IOT(object):
                                     "border:0px solid\n"
                                     "")
         self.label_20.setObjectName("label_20")
-        self.label_21 = QtWidgets.QLabel(self.widget_5)
-        self.label_21.setGeometry(QtCore.QRect(225, 105, 16, 25))
-        self.label_21.setStyleSheet("\n"
-                                    "font: 14pt \"微软雅黑\";\n"
-                                    "border:0px solid\n"
-                                    "")
-        self.label_21.setObjectName("label_21")
-        self.pushButton_5 = QtWidgets.QPushButton(self.widget_5)
-        self.pushButton_5.setGeometry(QtCore.QRect(300, 105, 16, 25))
-        self.pushButton_5.setStyleSheet("\n"
-                                        "font: 14pt \"微软雅黑\";\n"
-                                        "border:0px solid\n"
-                                        "")
-        self.pushButton_5.setObjectName("pushButton_5")
         self.label_24 = QtWidgets.QLabel(self.widget_5)
         self.label_24.setGeometry(QtCore.QRect(150, 10, 161, 41))
         self.label_24.setStyleSheet("\n"
@@ -512,13 +509,13 @@ class Ui_IOT(object):
                                           "")
         self.choose_jiazhua.setObjectName("choose_jiazhua")
         self.label_31 = QtWidgets.QLabel(self.tab)
-        self.label_31.setGeometry(QtCore.QRect(770, 20, 80, 80))
+        self.label_31.setGeometry(QtCore.QRect(730, 20, 80, 80))
         self.label_31.setText("")
         self.label_31.setPixmap(QtGui.QPixmap("resource/摄像头.png"))
         self.label_31.setScaledContents(True)
         self.label_31.setObjectName("label_31")
         self.open_video1 = QtWidgets.QPushButton(self.tab)
-        self.open_video1.setGeometry(QtCore.QRect(1080, 40, 50, 50))
+        self.open_video1.setGeometry(QtCore.QRect(960, 40, 50, 50))
         self.open_video1.setStyleSheet("QPushButton{background:transparent}\n"
                                        "\n"
                                        "QPushButton::hover{background:rgba(0, 0, 0,170)}")
@@ -545,6 +542,12 @@ class Ui_IOT(object):
         self.video1.setGeometry(QtCore.QRect(730, 140, 481, 271))
         self.video1.setText("")
         self.video1.setObjectName("video1")
+        self.label_17 = QtWidgets.QLabel(self.tab)
+        self.label_17.setGeometry(QtCore.QRect(1050, 40, 191, 51))
+        self.label_17.setStyleSheet("\n"
+                                    "font: 14pt \"微软雅黑\";\n"
+                                    "")
+        self.label_17.setObjectName("label_17")
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
@@ -668,74 +671,75 @@ class Ui_IOT(object):
         QtCore.QMetaObject.connectSlotsByName(IOT)
 
     def retranslateUi(self, IOT):
-        _translate = QtCore.QCoreApplication.translate
-        IOT.setWindowTitle(_translate("IOT", "Form"))
-        self.broker.setMarkdown(_translate("IOT", "根据物联网平台选择\n"
-                                                  "\n"
-                                                  ""))
-        self.port.setMarkdown(_translate("IOT", "端口\n"
-                                                "\n"
-                                                ""))
-        self.port.setHtml(_translate("IOT",
-                                     "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-                                     "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-                                     "p, li { white-space: pre-wrap; }\n"
-                                     "</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-                                     "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">端口</p></body></html>"))
-        self.client.setMarkdown(_translate("IOT", "Client_ID\n"
-                                                  "\n"
-                                                  ""))
-        self.password.setMarkdown(_translate("IOT", "密码\n"
+            _translate = QtCore.QCoreApplication.translate
+            IOT.setWindowTitle(_translate("IOT", "Form"))
+            self.broker.setMarkdown(_translate("IOT", "根据物联网平台选择\n"
+                                                      "\n"
+                                                      ""))
+            self.port.setMarkdown(_translate("IOT", "端口\n"
                                                     "\n"
                                                     ""))
-        self.password.setHtml(_translate("IOT",
+            self.port.setHtml(_translate("IOT",
                                          "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
                                          "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
                                          "p, li { white-space: pre-wrap; }\n"
                                          "</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-                                         "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">密码</p></body></html>"))
-        self.outtopic.setMarkdown(_translate("IOT", "发布主题\n"
-                                                    "\n"
-                                                    ""))
-        self.outtopic.setHtml(_translate("IOT",
-                                         "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-                                         "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-                                         "p, li { white-space: pre-wrap; }\n"
-                                         "</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-                                         "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">发布主题</p></body></html>"))
-        self.username.setMarkdown(_translate("IOT", "用户名\n"
-                                                    "\n"
-                                                    ""))
-        self.username.setHtml(_translate("IOT",
-                                         "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-                                         "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-                                         "p, li { white-space: pre-wrap; }\n"
-                                         "</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-                                         "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">用户名</p></body></html>"))
-        self.intopic.setMarkdown(_translate("IOT", "订阅主题\n"
-                                                   "\n"
-                                                   ""))
-        self.intopic.setHtml(_translate("IOT",
-                                        "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-                                        "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-                                        "p, li { white-space: pre-wrap; }\n"
-                                        "</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-                                        "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">订阅主题</p></body></html>"))
-        self.label_6.setText(_translate("IOT", "Outtopic:"))
-        self.label_brokerid.setText(_translate("IOT", "Broker ID："))
-        self.label_4.setText(_translate("IOT", "Port："))
-        self.label_2.setText(_translate("IOT", "Username："))
-        self.label_5.setText(_translate("IOT", "Intopic："))
-        self.label.setText(_translate("IOT", "Client_ID："))
-        self.label_3.setText(_translate("IOT", "Password："))
-        self.label_7.setText(_translate("IOT", "\'/sys/k0eudLzkYR8/app1/thing/event/property/post\'"))
-        self.label_brokerid_2.setText(_translate("IOT", "\'iot-06z00jl8tcjx5tf.mqtt.iothub.aliyuncs.com\'"))
-        self.label_8.setText(_translate("IOT", "1883"))
+                                         "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">端口</p></body></html>"))
+            self.client.setMarkdown(_translate("IOT", "Client_ID\n"
+                                                      "\n"
+                                                      ""))
+            self.password.setMarkdown(_translate("IOT", "密码\n"
+                                                        "\n"
+                                                        ""))
+            self.password.setHtml(_translate("IOT",
+                                             "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                             "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                             "p, li { white-space: pre-wrap; }\n"
+                                             "</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+                                             "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">密码</p></body></html>"))
+            self.outtopic.setMarkdown(_translate("IOT", "发布主题\n"
+                                                        "\n"
+                                                        ""))
+            self.outtopic.setHtml(_translate("IOT",
+                                             "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                             "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                             "p, li { white-space: pre-wrap; }\n"
+                                             "</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+                                             "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">发布主题</p></body></html>"))
+            self.username.setMarkdown(_translate("IOT", "用户名\n"
+                                                        "\n"
+                                                        ""))
+            self.username.setHtml(_translate("IOT",
+                                             "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                             "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                             "p, li { white-space: pre-wrap; }\n"
+                                             "</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+                                             "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">用户名</p></body></html>"))
+            self.intopic.setMarkdown(_translate("IOT", "订阅主题\n"
+                                                       "\n"
+                                                       ""))
+            self.intopic.setHtml(_translate("IOT",
+                                            "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                            "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                            "p, li { white-space: pre-wrap; }\n"
+                                            "</style></head><body style=\" font-family:\'Microsoft YaHei\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+                                            "<p style=\" margin-top:6px; margin-bottom:6px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">订阅主题</p></body></html>"))
+            self.label_6.setText(_translate("IOT", "Outtopic:"))
+            self.label_brokerid.setText(_translate("IOT", "Broker ID："))
+            self.label_4.setText(_translate("IOT", "Port："))
+            self.label_2.setText(_translate("IOT", "Username："))
+            self.label_5.setText(_translate("IOT", "Intopic："))
+            self.label.setText(_translate("IOT", "Client_ID："))
+            self.label_3.setText(_translate("IOT", "Password："))
+            self.label_7.setText(_translate("IOT", "\'/sys/k0eudLzkYR8/app1/thing/event/property/post\'"))
+            self.label_brokerid_2.setText(_translate("IOT", "\'iot-06z00jl8tcjx5tf.mqtt.iothub.aliyuncs.com\'"))
+            self.label_8.setText(_translate("IOT", "1883"))
         self.label_9.setText(_translate("IOT", "\"app1&k0eudLzkYR8\""))
-        self.label_10.setText(_translate("IOT", "\"/sys/k0eudLzkYR8/app1/thing/service/property/set\""))
-        self.label_11.setText(
-            _translate("IOT", "\"k0eudLzkYR8.app1|securemode=2,signmethod=hmacsha256,timestamp=1699097397678|\""))
-        self.label_12.setText(_translate("IOT", "\"0ea5530e7102db70088e68774060f592de3083b9e242d2de6d596840a77d6528\""))
+            self.label_10.setText(_translate("IOT", "\"/sys/k0eudLzkYR8/app1/thing/service/property/set\""))
+            self.label_11.setText(_translate("IOT",
+                                             "\"k0eudLzkYR8.app1|securemode=2,signmethod=hmacsha256,timestamp=1699097397678|\""))
+            self.label_12.setText(
+                    _translate("IOT", "\"0ea5530e7102db70088e68774060f592de3083b9e242d2de6d596840a77d6528\""))
         self.connected_button.setText(_translate("IOT", "连接阿里云平台"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), _translate("IOT", "Aliyun接入"))
         self.label_16.setText(_translate("IOT", "图像显示："))
@@ -762,19 +766,18 @@ class Ui_IOT(object):
         self.open_or_close_robot.setText(_translate("IOT", "开启"))
         self.state_robot.setText(_translate("IOT", "已开启"))
         self.open_or_close_pipeline.setText(_translate("IOT", "开启"))
-        self.label_14.setText(_translate("IOT", "机械臂状态："))
-        self.label_18.setText(_translate("IOT", "0"))
-        self.pushButton_3.setText(_translate("IOT", "Z"))
+            self.label_14.setText(_translate("IOT", "机械臂状态："))
+            self.end_x.setText(_translate("IOT", "[0,0,0]"))
+            self.pushButton_3.setText(_translate("IOT", "Z"))
         self.label_19.setText(_translate("IOT", "Y"))
         self.label_20.setText(_translate("IOT", "X"))
-        self.label_21.setText(_translate("IOT", "0"))
-        self.pushButton_5.setText(_translate("IOT", "0"))
         self.label_24.setText(_translate("IOT", "末端坐标"))
         self.label_27.setText(_translate("IOT", "末端执行器"))
         self.state_end_excutive.setText(_translate("IOT", "目前：夹爪"))
         self.choose_xipan.setText(_translate("IOT", "吸盘"))
-        self.choose_jiazhua.setText(_translate("IOT", "夹爪"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("IOT", "工作台现状"))
+            self.choose_jiazhua.setText(_translate("IOT", "夹爪"))
+            self.label_17.setText(_translate("IOT", "图像关闭："))
+            self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("IOT", "工作台现状"))
         self.label_23.setText(_translate("IOT", "改进DH参数"))
         item = self.tableWidget_2.verticalHeaderItem(0)
         item.setText(_translate("IOT", "关节1"))

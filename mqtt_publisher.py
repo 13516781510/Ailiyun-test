@@ -1,5 +1,6 @@
 import base64
 import json
+import random
 import time
 
 import paho.mqtt.client as mqtt
@@ -99,13 +100,15 @@ if __name__ == '__main__':
             data = {
                 "params": {
                     "vedio1": vdata,
-                    "location": [1, 2, 3],
-                    "collected": 42
+                    "end_location": [i, 2, 3],
+                    "collected": 42,
+                    "objection_location": [1, random.randrange(0, 180), random.randrange(0, 180),
+                                           random.randrange(0, 180)]
                 },
                 "veision": "1.0.0"
             }
             p.Publish(json.dumps(data))
             print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))  # 打印按指定格式排版的时间
             cv2.imshow("vedio1", img)
-            cv2.waitKey(300)
+            cv2.waitKey(500)
     cv2.destroyAllWindows()
