@@ -1,4 +1,4 @@
-# 毕业设计：
+# 毕业设计：git@github.com:13516781510/Ailiyun.git
 
 ### 1.pip install -r requirement.txt
 
