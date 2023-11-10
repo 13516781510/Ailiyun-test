@@ -294,32 +294,52 @@ class Ui_IOT(object):
                                     "font: 14pt \"微软雅黑\";\n"
                                     "")
         self.label_16.setObjectName("label_16")
-        self.tableWidget = QtWidgets.QTableWidget(self.tab)
-        self.tableWidget.setGeometry(QtCore.QRect(730, 470, 511, 211))
-        self.tableWidget.setStyleSheet("color: rgb(0, 0, 0);")
-        self.tableWidget.setLineWidth(1)
-        self.tableWidget.setMidLineWidth(0)
-        self.tableWidget.setObjectName("tableWidget")
-        self.tableWidget.setColumnCount(3)
-        self.tableWidget.setRowCount(6)
+        self.tableWidget1 = QtWidgets.QTableWidget(self.tab)
+        self.tableWidget1.setGeometry(QtCore.QRect(720, 460, 521, 221))
+        self.tableWidget1.setAutoFillBackground(True)
+        self.tableWidget1.setStyleSheet("color: rgb(0, 0, 0);")
+        self.tableWidget1.setLineWidth(1)
+        self.tableWidget1.setMidLineWidth(0)
+        self.tableWidget1.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.tableWidget1.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.tableWidget1.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustToContentsOnFirstShow)
+        self.tableWidget1.setDefaultDropAction(QtCore.Qt.IgnoreAction)
+        self.tableWidget1.setAlternatingRowColors(True)
+        self.tableWidget1.setTextElideMode(QtCore.Qt.ElideMiddle)
+        self.tableWidget1.setHorizontalScrollMode(QtWidgets.QAbstractItemView.ScrollPerItem)
+        self.tableWidget1.setShowGrid(True)
+        self.tableWidget1.setWordWrap(True)
+        self.tableWidget1.setObjectName("tableWidget1")
+        self.tableWidget1.setColumnCount(3)
+        self.tableWidget1.setRowCount(6)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(0, item)
+        self.tableWidget1.setVerticalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(1, item)
+        self.tableWidget1.setVerticalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(2, item)
+        self.tableWidget1.setVerticalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(3, item)
+        self.tableWidget1.setVerticalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(4, item)
+        self.tableWidget1.setVerticalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(5, item)
+        self.tableWidget1.setVerticalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(0, item)
+        self.tableWidget1.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(1, item)
+        self.tableWidget1.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(2, item)
+        self.tableWidget1.setHorizontalHeaderItem(2, item)
+        self.tableWidget1.horizontalHeader().setVisible(False)
+        self.tableWidget1.horizontalHeader().setCascadingSectionResizes(True)
+        self.tableWidget1.horizontalHeader().setDefaultSectionSize(100)
+        self.tableWidget1.horizontalHeader().setHighlightSections(True)
+        self.tableWidget1.horizontalHeader().setSortIndicatorShown(False)
+        self.tableWidget1.horizontalHeader().setStretchLastSection(True)
+        self.tableWidget1.verticalHeader().setCascadingSectionResizes(True)
+        self.tableWidget1.verticalHeader().setHighlightSections(True)
+        self.tableWidget1.verticalHeader().setSortIndicatorShown(False)
+        self.tableWidget1.verticalHeader().setStretchLastSection(True)
         self.widget_4 = QtWidgets.QWidget(self.tab)
         self.widget_4.setGeometry(QtCore.QRect(20, 100, 341, 161))
         self.widget_4.setStyleSheet("QWidget{\n"
@@ -331,9 +351,9 @@ class Ui_IOT(object):
         self.label_15 = QtWidgets.QLabel(self.widget_4)
         self.label_15.setGeometry(QtCore.QRect(20, 80, 111, 51))
         self.label_15.setStyleSheet("\n"
-                                    "font: 14pt \"微软雅黑\";\n"
-                                    "border:0px solid\n"
-                                    "")
+                                    "                   font: 14pt \"微软雅黑\";\n"
+                                    "                   border:0px solid\n"
+                                    "               ")
         self.label_15.setObjectName("label_15")
         self.set_pipeline_v = QtWidgets.QDoubleSpinBox(self.widget_4)
         self.set_pipeline_v.setGeometry(QtCore.QRect(140, 95, 62, 22))
@@ -350,37 +370,39 @@ class Ui_IOT(object):
         self.open_or_close_robot = QtWidgets.QPushButton(self.widget_4)
         self.open_or_close_robot.setGeometry(QtCore.QRect(230, 35, 75, 23))
         self.open_or_close_robot.setStyleSheet("\n"
-                                               "QPushButton{\n"
-                                               "background:transparent;\n"
-                                               "font: 14pt \"微软雅黑\";\n"
-                                               "border:1px solid;\n"
-                                               "border-color: rgb(255, 85, 0);\n"
-                                               "border-radius:5;\n"
-                                               "}\n"
+                                               "                      QPushButton{\n"
+                                               "                      background:transparent;\n"
+                                               "                      font: 14pt \"微软雅黑\";\n"
+                                               "                      border:1px solid;\n"
+                                               "                      border-color: rgb(255, 85, 0);\n"
+                                               "                      border-radius:5;\n"
+                                               "                      }\n"
                                                "\n"
                                                "\n"
-                                               "QPushButton::hover{background:rgba(0, 0, 0,170)}")
+                                               "                      QPushButton::hover{background:rgba(0, 0, 0,170)}\n"
+                                               "                  ")
         self.open_or_close_robot.setObjectName("open_or_close_robot")
         self.state_robot = QtWidgets.QLabel(self.widget_4)
         self.state_robot.setGeometry(QtCore.QRect(140, 20, 111, 51))
         self.state_robot.setStyleSheet("\n"
-                                       "font: 14pt \"微软雅黑\";\n"
-                                       "border:0px solid\n"
-                                       "")
+                                       "                      font: 14pt \"微软雅黑\";\n"
+                                       "                      border:0px solid\n"
+                                       "                  ")
         self.state_robot.setObjectName("state_robot")
         self.open_or_close_pipeline = QtWidgets.QPushButton(self.widget_4)
         self.open_or_close_pipeline.setGeometry(QtCore.QRect(230, 95, 75, 23))
         self.open_or_close_pipeline.setStyleSheet("\n"
-                                                  "QPushButton{\n"
-                                                  "background:transparent;\n"
-                                                  "font: 14pt \"微软雅黑\";\n"
-                                                  "border:1px solid;\n"
-                                                  "border-color: rgb(255, 85, 0);\n"
-                                                  "border-radius:5;\n"
-                                                  "}\n"
+                                                  "                      QPushButton{\n"
+                                                  "                      background:transparent;\n"
+                                                  "                      font: 14pt \"微软雅黑\";\n"
+                                                  "                      border:1px solid;\n"
+                                                  "                      border-color: rgb(255, 85, 0);\n"
+                                                  "                      border-radius:5;\n"
+                                                  "                      }\n"
                                                   "\n"
                                                   "\n"
-                                                  "QPushButton::hover{background:rgba(0, 0, 0,170)}")
+                                                  "                      QPushButton::hover{background:rgba(0, 0, 0,170)}\n"
+                                                  "                  ")
         self.open_or_close_pipeline.setObjectName("open_or_close_pipeline")
         self.label_14 = QtWidgets.QLabel(self.widget_4)
         self.label_14.setGeometry(QtCore.QRect(20, 20, 111, 51))
@@ -406,9 +428,9 @@ class Ui_IOT(object):
         font.setWeight(50)
         self.end_x.setFont(font)
         self.end_x.setStyleSheet("\n"
-                                 "font: 18pt \"微软雅黑\";\n"
-                                 "border:0px solid\n"
-                                 "")
+                                 "                      font: 18pt \"微软雅黑\";\n"
+                                 "                      border:0px solid\n"
+                                 "                  ")
         self.end_x.setAlignment(QtCore.Qt.AlignCenter)
         self.end_x.setWordWrap(False)
         self.end_x.setIndent(0)
@@ -475,37 +497,38 @@ class Ui_IOT(object):
         self.state_end_excutive = QtWidgets.QLabel(self.widget_7)
         self.state_end_excutive.setGeometry(QtCore.QRect(120, 50, 131, 25))
         self.state_end_excutive.setStyleSheet("\n"
-                                              "font: 14pt \"微软雅黑\";\n"
-                                              "border:0px solid\n"
-                                              "")
+                                              "                      font: 14pt \"微软雅黑\";\n"
+                                              "                      border:0px solid\n"
+                                              "                  ")
         self.state_end_excutive.setObjectName("state_end_excutive")
         self.choose_xipan = QtWidgets.QPushButton(self.widget_7)
         self.choose_xipan.setGeometry(QtCore.QRect(220, 110, 75, 23))
         self.choose_xipan.setStyleSheet("\n"
-                                        "QPushButton{\n"
-                                        "background:transparent;\n"
-                                        "font: 14pt \"微软雅黑\";\n"
-                                        "border:1px solid;\n"
-                                        "border-color: rgb(255, 85, 0);\n"
-                                        "border-radius:5;\n"
-                                        "}\n"
+                                        "                      QPushButton{\n"
+                                        "                      background:transparent;\n"
+                                        "                      font: 14pt \"微软雅黑\";\n"
+                                        "                      border:1px solid;\n"
+                                        "                      border-color: rgb(255, 85, 0);\n"
+                                        "                      border-radius:5;\n"
+                                        "                      }\n"
                                         "\n"
                                         "\n"
-                                        "QPushButton::hover{background:rgba(0, 0, 0,170)}")
+                                        "                      QPushButton::hover{background:rgba(0, 0, 0,170)}\n"
+                                        "                  ")
         self.choose_xipan.setObjectName("choose_xipan")
         self.choose_jiazhua = QtWidgets.QPushButton(self.widget_7)
         self.choose_jiazhua.setGeometry(QtCore.QRect(110, 110, 75, 23))
         self.choose_jiazhua.setStyleSheet("\n"
-                                          "QPushButton{\n"
-                                          "background:transparent;\n"
-                                          "font: 14pt \"微软雅黑\";\n"
-                                          "border:1px solid;\n"
-                                          "border-color: rgb(255, 85, 0);\n"
-                                          "border-radius:5;\n"
-                                          "}\n"
+                                          "                      QPushButton{\n"
+                                          "                      background:transparent;\n"
+                                          "                      font: 14pt \"微软雅黑\";\n"
+                                          "                      border:1px solid;\n"
+                                          "                      border-color: rgb(255, 85, 0);\n"
+                                          "                      border-radius:5;\n"
+                                          "                      }\n"
                                           "\n"
                                           "\n"
-                                          "QPushButton::hover{background:rgba(0, 0, 0,170)}\n"
+                                          "                      QPushButton::hover{background:rgba(0, 0, 0,170)}\n"
                                           "")
         self.choose_jiazhua.setObjectName("choose_jiazhua")
         self.label_31 = QtWidgets.QLabel(self.tab)
@@ -545,8 +568,8 @@ class Ui_IOT(object):
         self.label_17 = QtWidgets.QLabel(self.tab)
         self.label_17.setGeometry(QtCore.QRect(1050, 40, 191, 51))
         self.label_17.setStyleSheet("\n"
-                                    "font: 14pt \"微软雅黑\";\n"
-                                    "")
+                                    "                     font: 14pt \"微软雅黑\";\n"
+                                    "                 ")
         self.label_17.setObjectName("label_17")
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QtWidgets.QWidget()
@@ -667,7 +690,7 @@ class Ui_IOT(object):
 
         self.retranslateUi(IOT)
         self.tabWidget_2.setCurrentIndex(0)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(IOT)
 
     def retranslateUi(self, IOT):
@@ -734,60 +757,60 @@ class Ui_IOT(object):
             self.label_7.setText(_translate("IOT", "\'/sys/k0eudLzkYR8/app1/thing/event/property/post\'"))
             self.label_brokerid_2.setText(_translate("IOT", "\'iot-06z00jl8tcjx5tf.mqtt.iothub.aliyuncs.com\'"))
             self.label_8.setText(_translate("IOT", "1883"))
-        self.label_9.setText(_translate("IOT", "\"app1&k0eudLzkYR8\""))
+            self.label_9.setText(_translate("IOT", "\"app1&k0eudLzkYR8\""))
             self.label_10.setText(_translate("IOT", "\"/sys/k0eudLzkYR8/app1/thing/service/property/set\""))
             self.label_11.setText(_translate("IOT",
                                              "\"k0eudLzkYR8.app1|securemode=2,signmethod=hmacsha256,timestamp=1699097397678|\""))
             self.label_12.setText(
                     _translate("IOT", "\"0ea5530e7102db70088e68774060f592de3083b9e242d2de6d596840a77d6528\""))
-        self.connected_button.setText(_translate("IOT", "连接阿里云平台"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), _translate("IOT", "Aliyun接入"))
-        self.label_16.setText(_translate("IOT", "图像显示："))
-        self.tableWidget.setSortingEnabled(False)
-        item = self.tableWidget.verticalHeaderItem(0)
-        item.setText(_translate("IOT", "识别"))
-        item = self.tableWidget.verticalHeaderItem(1)
-        item.setText(_translate("IOT", "识别结果"))
-        item = self.tableWidget.verticalHeaderItem(2)
-        item.setText(_translate("IOT", "置信度"))
-        item = self.tableWidget.verticalHeaderItem(3)
-        item.setText(_translate("IOT", "X"))
-        item = self.tableWidget.verticalHeaderItem(4)
-        item.setText(_translate("IOT", "Y"))
-        item = self.tableWidget.verticalHeaderItem(5)
+            self.connected_button.setText(_translate("IOT", "连接阿里云平台"))
+            self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), _translate("IOT", "Aliyun接入"))
+            self.label_16.setText(_translate("IOT", "图像显示："))
+            self.tableWidget1.setSortingEnabled(False)
+            item = self.tableWidget1.verticalHeaderItem(0)
+            item.setText(_translate("IOT", "识别"))
+            item = self.tableWidget1.verticalHeaderItem(1)
+            item.setText(_translate("IOT", "识别结果"))
+            item = self.tableWidget1.verticalHeaderItem(2)
+            item.setText(_translate("IOT", "置信度"))
+            item = self.tableWidget1.verticalHeaderItem(3)
+            item.setText(_translate("IOT", "X"))
+            item = self.tableWidget1.verticalHeaderItem(4)
+            item.setText(_translate("IOT", "Y"))
+            item = self.tableWidget1.verticalHeaderItem(5)
         item.setText(_translate("IOT", "Z"))
-        item = self.tableWidget.horizontalHeaderItem(0)
-        item.setText(_translate("IOT", "对象1"))
-        item = self.tableWidget.horizontalHeaderItem(1)
-        item.setText(_translate("IOT", "对象2"))
-        item = self.tableWidget.horizontalHeaderItem(2)
-        item.setText(_translate("IOT", "对象3"))
-        self.label_15.setText(_translate("IOT", "传送带状态："))
-        self.open_or_close_robot.setText(_translate("IOT", "开启"))
-        self.state_robot.setText(_translate("IOT", "已开启"))
-        self.open_or_close_pipeline.setText(_translate("IOT", "开启"))
+            item = self.tableWidget1.horizontalHeaderItem(0)
+            item.setText(_translate("IOT", "对象1"))
+            item = self.tableWidget1.horizontalHeaderItem(1)
+            item.setText(_translate("IOT", "对象2"))
+            item = self.tableWidget1.horizontalHeaderItem(2)
+            item.setText(_translate("IOT", "对象3"))
+            self.label_15.setText(_translate("IOT", "传送带状态："))
+            self.open_or_close_robot.setText(_translate("IOT", "开启"))
+            self.state_robot.setText(_translate("IOT", "已开启"))
+            self.open_or_close_pipeline.setText(_translate("IOT", "开启"))
             self.label_14.setText(_translate("IOT", "机械臂状态："))
             self.end_x.setText(_translate("IOT", "[0,0,0]"))
             self.pushButton_3.setText(_translate("IOT", "Z"))
-        self.label_19.setText(_translate("IOT", "Y"))
-        self.label_20.setText(_translate("IOT", "X"))
-        self.label_24.setText(_translate("IOT", "末端坐标"))
-        self.label_27.setText(_translate("IOT", "末端执行器"))
-        self.state_end_excutive.setText(_translate("IOT", "目前：夹爪"))
-        self.choose_xipan.setText(_translate("IOT", "吸盘"))
+            self.label_19.setText(_translate("IOT", "Y"))
+            self.label_20.setText(_translate("IOT", "X"))
+            self.label_24.setText(_translate("IOT", "末端坐标"))
+            self.label_27.setText(_translate("IOT", "末端执行器"))
+            self.state_end_excutive.setText(_translate("IOT", "目前：夹爪"))
+            self.choose_xipan.setText(_translate("IOT", "吸盘"))
             self.choose_jiazhua.setText(_translate("IOT", "夹爪"))
             self.label_17.setText(_translate("IOT", "图像关闭："))
             self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("IOT", "工作台现状"))
-        self.label_23.setText(_translate("IOT", "改进DH参数"))
-        item = self.tableWidget_2.verticalHeaderItem(0)
-        item.setText(_translate("IOT", "关节1"))
-        item = self.tableWidget_2.verticalHeaderItem(1)
-        item.setText(_translate("IOT", "关节2"))
-        item = self.tableWidget_2.verticalHeaderItem(2)
-        item.setText(_translate("IOT", "关节3"))
-        item = self.tableWidget_2.verticalHeaderItem(3)
-        item.setText(_translate("IOT", "关节4"))
-        item = self.tableWidget_2.verticalHeaderItem(4)
+            self.label_23.setText(_translate("IOT", "改进DH参数"))
+            item = self.tableWidget_2.verticalHeaderItem(0)
+            item.setText(_translate("IOT", "关节1"))
+            item = self.tableWidget_2.verticalHeaderItem(1)
+            item.setText(_translate("IOT", "关节2"))
+            item = self.tableWidget_2.verticalHeaderItem(2)
+            item.setText(_translate("IOT", "关节3"))
+            item = self.tableWidget_2.verticalHeaderItem(3)
+            item.setText(_translate("IOT", "关节4"))
+            item = self.tableWidget_2.verticalHeaderItem(4)
         item.setText(_translate("IOT", "关节5"))
         item = self.tableWidget_2.horizontalHeaderItem(0)
         item.setText(_translate("IOT", "θ"))

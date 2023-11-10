@@ -151,7 +151,7 @@ border-color: #4796f0;
 }</string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="tab_7">
       <attribute name="title">
@@ -625,12 +625,12 @@ QPushButton::hover{background:rgba(0, 0, 0,170)}
       </widget>
       <widget class="QLabel" name="label_13">
        <property name="geometry">
-        <rect>
-            <x>0</x>
-            <y>10</y>
-            <width>91</width>
-            <height>91</height>
-        </rect>
+           <rect>
+               <x>0</x>
+               <y>10</y>
+               <width>91</width>
+               <height>91</height>
+           </rect>
        </property>
        <property name="text">
         <string/>
@@ -703,37 +703,97 @@ font: 14pt &quot;微软雅黑&quot;;
         <string>图像显示：</string>
        </property>
       </widget>
-      <widget class="QTableWidget" name="tableWidget">
-       <property name="geometry">
-        <rect>
-         <x>730</x>
-         <y>470</y>
-         <width>511</width>
-         <height>211</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(0, 0, 0);</string>
-       </property>
-       <property name="lineWidth">
-        <number>1</number>
-       </property>
-       <property name="midLineWidth">
-        <number>0</number>
-       </property>
-       <property name="sortingEnabled">
-        <bool>false</bool>
-       </property>
-       <row>
-        <property name="text">
-         <string>识别</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>识别结果</string>
-        </property>
-       </row>
+         <widget class="QTableWidget" name="tableWidget1">
+             <property name="geometry">
+                 <rect>
+                     <x>720</x>
+                     <y>460</y>
+                     <width>521</width>
+                     <height>221</height>
+                 </rect>
+             </property>
+             <property name="autoFillBackground">
+                 <bool>true</bool>
+             </property>
+             <property name="styleSheet">
+                 <string notr="true">color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="lineWidth">
+                 <number>1</number>
+             </property>
+             <property name="midLineWidth">
+                 <number>0</number>
+             </property>
+             <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+             </property>
+             <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOn</enum>
+             </property>
+             <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+             </property>
+             <property name="defaultDropAction">
+                 <enum>Qt::IgnoreAction</enum>
+             </property>
+             <property name="alternatingRowColors">
+                 <bool>true</bool>
+             </property>
+             <property name="textElideMode">
+                 <enum>Qt::ElideMiddle</enum>
+             </property>
+             <property name="horizontalScrollMode">
+                 <enum>QAbstractItemView::ScrollPerItem</enum>
+             </property>
+             <property name="showGrid">
+                 <bool>true</bool>
+             </property>
+             <property name="sortingEnabled">
+                 <bool>false</bool>
+             </property>
+             <property name="wordWrap">
+                 <bool>true</bool>
+             </property>
+             <attribute name="horizontalHeaderVisible">
+                 <bool>false</bool>
+             </attribute>
+             <attribute name="horizontalHeaderCascadingSectionResizes">
+                 <bool>true</bool>
+             </attribute>
+             <attribute name="horizontalHeaderDefaultSectionSize">
+                 <number>100</number>
+             </attribute>
+             <attribute name="horizontalHeaderHighlightSections">
+                 <bool>true</bool>
+             </attribute>
+             <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                 <bool>false</bool>
+             </attribute>
+             <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+             </attribute>
+             <attribute name="verticalHeaderCascadingSectionResizes">
+                 <bool>true</bool>
+             </attribute>
+             <attribute name="verticalHeaderHighlightSections">
+                 <bool>true</bool>
+             </attribute>
+             <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+                 <bool>false</bool>
+             </attribute>
+             <attribute name="verticalHeaderStretchLastSection">
+                 <bool>true</bool>
+             </attribute>
+             <row>
+                 <property name="text">
+                     <string>识别</string>
+                 </property>
+             </row>
+             <row>
+                 <property name="text">
+                     <string>识别结果</string>
+                 </property>
+             </row>
        <row>
         <property name="text">
          <string>置信度</string>
@@ -786,25 +846,25 @@ border:2px solid
 border-color: rgb(207, 207, 207);
 color: rgb(0, 0, 0);</string>
        </property>
-       <widget class="QLabel" name="label_15">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>80</y>
-          <width>111</width>
-          <height>51</height>
-         </rect>
-        </property>
-           <property name="styleSheet">
-               <string notr="true">
-                   font: 14pt &quot;微软雅黑&quot;;
-                   border:0px solid
-               </string>
-           </property>
-           <property name="text">
-               <string>传送带状态：</string>
-           </property>
-       </widget>
+          <widget class="QLabel" name="label_15">
+              <property name="geometry">
+                  <rect>
+                      <x>20</x>
+                      <y>80</y>
+                      <width>111</width>
+                      <height>51</height>
+                  </rect>
+              </property>
+              <property name="styleSheet">
+                  <string notr="true">
+                      font: 14pt &quot;微软雅黑&quot;;
+                      border:0px solid
+                  </string>
+              </property>
+              <property name="text">
+                  <string>传送带状态：</string>
+              </property>
+          </widget>
           <widget class="QDoubleSpinBox" name="set_pipeline_v">
               <property name="geometry">
                   <rect>
@@ -930,16 +990,17 @@ border:0px solid
         <rect>
          <x>20</x>
             <y>310</y>
-         <width>341</width>
-         <height>161</height>
+            <width>341</width>
+            <height>161</height>
         </rect>
        </property>
-       <property name="styleSheet">
-        <string notr="true">QWidget{
-border:2px solid
-}
-border-color: rgb(207, 207, 207);</string>
-       </property>
+          <property name="styleSheet">
+              <string notr="true">QWidget{
+                  border:2px solid
+                  }
+                  border-color: rgb(207, 207, 207);
+              </string>
+          </property>
           <widget class="QLabel" name="end_x">
               <property name="geometry">
                   <rect>
@@ -1122,16 +1183,17 @@ border:0px solid
           <x>10</x>
           <y>10</y>
           <width>80</width>
-          <height>80</height>
+             <height>80</height>
          </rect>
         </property>
-        <property name="styleSheet">
-         <string notr="true">border:0px solid;
-border-color: rgb(255, 85, 0);</string>
-        </property>
-        <property name="lineWidth">
-         <number>0</number>
-        </property>
+           <property name="styleSheet">
+               <string notr="true">border:0px solid;
+                   border-color: rgb(255, 85, 0);
+               </string>
+           </property>
+           <property name="lineWidth">
+               <number>0</number>
+           </property>
            <property name="text">
                <string/>
            </property>
@@ -1297,19 +1359,19 @@ QPushButton::hover{background:rgba(0, 0, 0,170)}</string>
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QLabel" name="video1">
-          <property name="geometry">
-              <rect>
-                  <x>730</x>
-                  <y>140</y>
-                  <width>481</width>
-                  <height>271</height>
-              </rect>
-          </property>
-          <property name="text">
-              <string/>
-          </property>
-      </widget>
+         <widget class="QLabel" name="video1">
+             <property name="geometry">
+                 <rect>
+                     <x>730</x>
+                     <y>140</y>
+                     <width>481</width>
+                     <height>271</height>
+                 </rect>
+             </property>
+             <property name="text">
+                 <string/>
+             </property>
+         </widget>
          <widget class="QLabel" name="label_17">
              <property name="geometry">
                  <rect>
@@ -1382,12 +1444,12 @@ border:0px solid
        </widget>
        <widget class="QTableWidget" name="tableWidget_2">
         <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>80</y>
-          <width>461</width>
-          <height>241</height>
-         </rect>
+            <rect>
+                <x>10</x>
+                <y>80</y>
+                <width>471</width>
+                <height>421</height>
+            </rect>
         </property>
         <row>
          <property name="text">
