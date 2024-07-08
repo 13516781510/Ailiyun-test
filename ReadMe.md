@@ -1,4 +1,4 @@
-# 毕业设计：git@github.com:13516781510/Ailiyun.git
+# localsize test of gradution project：git@github.com:13516781510/Ailiyun.git
 
 ### 1.pip install -r requirement.txt
 
